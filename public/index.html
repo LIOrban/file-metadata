@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File Metadata Microservice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link type="text/css" href="index.css" rel="stylesheet">
+	    <link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1>File Metadata Microservice</h1>
+            <p>Upload a file and get its size in bytes as a JSON response.</p>
+        </div>
+        <div id="content">
+            <form name="uploadform" action="/upload" method="post" enctype="multipart/form-data">
+                <input id="filename" type="file" name="filename">
+                <label for="filename" id="filename-label">Choose file</label>
+                <input id="upload" type="submit" value="Upload file" name="upload"/>
+            </form>
+        </div>
+        <div id="footer">
+            <p>
+                <a href="https://www.freecodecamp.com/challenges/file-metadata-microservice">Free Code Camp Project</a>
+            </p>
+            <a href="https://www.linkedin.com/in/laurentiu-iosif-orban-09b8b34b" target="_blank"><i class="fa fa-linkedin-square fa-2x"  aria-hidden="true"></i></a>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
