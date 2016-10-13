@@ -6,7 +6,7 @@ var upload=multer();
 
 app.use(express.static('public'));
 
-app.get("/", function(req,res){
+app.get("/*", function(req,res){
     var indexHTML=path.join(__dirname,"/public/index.html");
     res.sendFile(indexHTML);
 });
